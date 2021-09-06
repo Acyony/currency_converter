@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Currency converter</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+<body>
+
+    <div class="currency-container">
+        <h2>Currency Converter</h2>
+
+        <div class="crypto-current-input">
+            <button>Crypto-Currency</button>
+
+            <select name="crypto-currency" id="crypto-currency">
+                <option value="btc">BTC</option>
+                <option value="xrp">XRP</option>
+                <option value="eos">EOS</option>
+                <option value="ltc">LTC</option>
+                <option value="eth">ETH</option>
+
+            </select>
+        </div>
+
+
+        <div class="crypto-current-value">
+            <input type="text" class="form-input" id="crypto-amount" placeholder="0" />
+        </div>
+
+        <div class="crypto-current-input">
+            <button>Currency</button>
+            <select name="real-currency" id="real-currency">
+                <option value="usd">USD</option>
+                <option value="eur">EUR</option>
+                <option value="gbp">GBP</option>
+                <option value="aud">AUD</option>
+                <option value="hk">HK</option>
+                <option value="brl">BRL</option>
+                
+            </select>
+        </div>
+
+        <div>
+            <input type="text" class="form-input" id="real-amount" disabled />
+        </div>
+
+        <button id="convert-btn">Convert</button>
+
+    </div>
+
+
+    </div>
+</body>
+
+<script>
+    if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+            navigator.serviceWorker
+                .register("service-worker.js")
+                .then((registration) => {
+                    console.log("Service Worker registered: ", registration);
+                })
+                .catch((registrationError) => {
+                    console.error(
+                        "Service Worker registration failed: ",
+                        registrationError
+                    );
+                });
+        });
+    }
+</script>
+
+</html>
