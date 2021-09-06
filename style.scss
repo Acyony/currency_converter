@@ -1,0 +1,36 @@
+body {
+    background-color: pink;
+}
+
+input {
+    padding: 5px 10px;
+}
+
+.crypto-current-input {
+    margin: 1rem 0;
+
+}
+
+.form-input {
+    width: 25vw;
+}
+
+.currency-container {
+    margin: 0 auto;
+    width: 35vw;
+}
+
+#convert-btn {
+    margin-top: 1rem;
+    background-color: grey;
+    color: whitesmoke;
+    border-radius: 3px;
+    border-style: none;
+    padding: 5px 10px;
+}
+
+#convert-btn:hover {
+    background-color: aqua;
+    color: black;
+    border-radius: 3px;
+}
